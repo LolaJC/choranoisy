@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Choranoisy</title>
+<meta name="description" content="Une question, envie de rejoindre la chorale ? Contactez Choranoisy.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="container">
+    <a class="wordmark" href="index.html"><img src="assets/img/logo-choranoisy.jpg" alt="Choranoisy"></a>
+    <nav class="main-nav desktop-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <details class="nav-toggle">
+      <summary>Menu</summary>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<section class="stage stage-tall stage-split">
+  <div class="stage-bg stage-bg-dark" style="background-image: url('assets/img/nous-contacter.jpg'); background-position: center 30%;"></div>
+  <div class="container stage-inner">
+    <div class="stage-copy">
+      <p class="eyebrow">Une question ? Envie de nous rejoindre ?</p>
+      <p class="lede">Si vous avez la moindre interrogation ou si vous souhaitez nous rejoindre, remplissez ce formulaire. Nous nous ferons un plaisir de vous répondre.</p>
+      <ul class="pills">
+        <li>Conservatoire Nadia et Lili Boulanger</li>
+        <li>Jeudi · 19h30 – 21h30</li>
+        <li>Noisy-le-Sec</li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <p class="kicker">Nous contacter</p>
+      <!--
+        Formulaire connecté à Web3Forms : le message part directement,
+        sans ouvrir le client mail du visiteur. Il faut juste renseigner
+        ta propre clé d'accès ci-dessous (voir README.md) pour que les
+        messages arrivent dans ta boîte mail.
+      -->
+      <form class="stack" data-contact-form>
+        <input type="hidden" name="access_key" value="cfc78242-d46a-4496-b859-cf925ae4e113">
+        <input type="hidden" name="subject" value="Nouveau message depuis choranoisy.com">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-row">
+          <div>
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" name="Nom" autocomplete="family-name">
+          </div>
+          <div>
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" name="Prénom" autocomplete="given-name">
+          </div>
+        </div>
+        <div>
+          <label for="email">Adresse mail *</label>
+          <input type="email" id="email" name="Adresse mail" required autocomplete="email">
+        </div>
+        <div>
+          <label for="tel">N° de téléphone <span class="optional">(facultatif)</span></label>
+          <input type="tel" id="tel" name="Téléphone" autocomplete="tel">
+        </div>
+        <div>
+          <label for="message">Message *</label>
+          <textarea id="message" name="Message" required></textarea>
+        </div>
+        <p class="form-actions">
+          <button class="btn" type="submit">Envoyer mon message</button>
+          <span class="form-status" role="status"></span>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="container">
+    <svg class="staff-motif footer-motif" viewBox="0 0 240 40" aria-hidden="true" focusable="false">
+      <line x1="0" y1="2" x2="240" y2="2"></line>
+      <line x1="0" y1="11" x2="240" y2="11"></line>
+      <line x1="0" y1="20" x2="240" y2="20"></line>
+      <line x1="0" y1="29" x2="240" y2="29"></line>
+      <line x1="0" y1="38" x2="240" y2="38"></line>
+    </svg>
+    <span>© 2026 Choranoisy — Ensemble vocal de Noisy-le-Sec</span>
+    <a href="politique-de-confidentialite.html">Politique de confidentialité</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
